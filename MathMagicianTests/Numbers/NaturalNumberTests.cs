@@ -27,5 +27,18 @@ namespace MathMagicianTests.Numbers
             //Assert(check the output from method)
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [TestMethod]
+        public void GetNextTest()
+        {
+            //arrange
+            NaturalNumber naturalNumber = new NaturalNumber();
+
+            //act
+            int expectedResult = 2;
+            int actualResult = naturalNumber.GetNext(1)
+;
+            //assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }

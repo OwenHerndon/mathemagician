@@ -12,12 +12,14 @@ namespace MathMagician
         {
             //enter a numer
             //Console.WriteLine("Please enter a number");
-            //int number = Console.ReadLine();
-            //check for valid number
+            //string number = Console.ReadLine();
 
+            //check for valid number
+            string[] opperations = new string[] {"Even", "Odd", "Prime", "Integer", "Fibonacci" };
             Console.WriteLine("What would you like me to do?");
             Console.WriteLine("Select an operation");
-            Console.WriteLine(); //write out array of operations
+            opperations.ToList().ForEach(Console.WriteLine);
+            //write out array of operations
 
             string command = Console.ReadLine();
             //check if valid operation

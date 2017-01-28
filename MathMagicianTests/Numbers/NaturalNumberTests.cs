@@ -44,9 +44,14 @@ namespace MathMagicianTests.Numbers
         public void SequenceTest()
         {
             //arrange
+            NaturalNumber naturalNumber = new NaturalNumber();
 
             //act
+            int expectedResult = [1,2,3,4,5];
+            int actualResult = naturalNumber.GetSequence();
 
+            //assert
+            Assert.AreEqual(expectedResult, actualResult);
 
         }
     }

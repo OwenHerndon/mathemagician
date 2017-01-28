@@ -48,10 +48,11 @@ namespace MathMagicianTests.Numbers
 
             //act
             int[] expectedResult = { 1, 2, 3, 4, 5};
-            int actualResult = naturalNumber.GetSequence(5);
+            int[] actualResult = naturalNumber.GetSequence(5);
 
             //assert
             Assert.AreEqual(expectedResult.Length, actualResult.Length);
+            CollectionAssert.AreEqual(expectedResult, actualResult);
 
         }
         [TestMethod]
@@ -61,7 +62,7 @@ namespace MathMagicianTests.Numbers
             NaturalNumber naturalNumber = new NaturalNumber();
 
             //act
-            string expectedResult = "1,2,3,4,5";
+            string expectedResult = "1 2 3 4 5";
             int[] inputArray = new[] { 1, 2, 3, 4, 5 };
             string actualResult = naturalNumber.PrintNumbers(inputArray);
 

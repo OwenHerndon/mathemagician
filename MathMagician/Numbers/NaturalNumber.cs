@@ -10,6 +10,8 @@ namespace MathMagician.Numbers
     {
         private int First { get; set; }
 
+        //private List<int> sequence {get; set;}
+
         public NaturalNumber()
         {
             First = 1;
@@ -37,17 +39,18 @@ namespace MathMagician.Numbers
             //array set to the number entered by user to be printed out
             //push numers that fit the selected opperator
             //result of filled array.
-            int[] Sequence = new int[how_many];
-            // for(int i = 1; i < how_many; i++)
-            // {
-            //   GetNext(i);   
-            //}
-            return Sequence;
+            int[] sequence = new int[how_many];
+            sequence[0] = GetFirst(); //i = 1
+            for(int i = 1; i < sequence.Length; i++)
+            {
+               sequence[i] = GetNext(sequence[i-1]);   
+            }
+            return sequence;
         }
 
-        public string PrintNumbers(int[] how_many)
+        public string PrintNumbers(int[] sequence_array)
         {
-            throw new NotImplementedException();
+            return String.Join(" ", sequence_array);
         }
     }
 }

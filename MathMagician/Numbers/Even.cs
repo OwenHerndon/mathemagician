@@ -8,24 +8,39 @@ namespace MathMagician.Numbers
 {
     public class Even : Integer
     {
+        private int First { get; set; }
+
+        public Even()
+        {
+            First = 2;
+        }
+
         public int GetFirst()
         {
-            throw new NotImplementedException();
+            return First;
         }
 
         public int GetNext(int current)
         {
-            throw new NotImplementedException();
+            current = current + 2;
+            return current;
+
         }
 
         public int[] GetSequence(int how_many)
         {
-            throw new NotImplementedException();
+            int[] sequence = new int[how_many];
+            sequence[0] = GetFirst(); //i = 1
+            for (int i = 1; i < sequence.Length; i++)
+            {
+                sequence[i] = GetNext(sequence[i - 1]);
+            }
+            return sequence;
         }
 
-        public string PrintNumbers(int[] how_many)
+        public string PrintNumbers(int[] sequence_array)
         {
-            throw new NotImplementedException();
+            return String.Join(" ", sequence_array);
         }
     }
 }

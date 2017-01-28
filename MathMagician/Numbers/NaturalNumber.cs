@@ -23,8 +23,11 @@ namespace MathMagician.Numbers
 
         public int GetNext(int current)
         {
+            //current argument is read only
             //keep looping through numbers
-            //current or first number + 1 
+            //current or first number + 1
+            //return current++
+            //return ++curent 
             current = current + 1;
             return current;
         }

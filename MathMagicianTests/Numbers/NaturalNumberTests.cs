@@ -40,5 +40,14 @@ namespace MathMagicianTests.Numbers
             //assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [TestMethod]
+        public void SequenceTest()
+        {
+            //arrange
+
+            //act
+
+
+        }
     }
 }

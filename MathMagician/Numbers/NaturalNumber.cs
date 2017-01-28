@@ -35,9 +35,9 @@ namespace MathMagician.Numbers
             //push numers that fit the selected opperator
             //result of filled array.
             int[] Sequence = new int[how_many];
-           // for(int i = 1; i < how_many; i++)
-           // {
-             //   GetNext(i);   
+            // for(int i = 1; i < how_many; i++)
+            // {
+            //   GetNext(i);   
             //}
             return Sequence;
         }

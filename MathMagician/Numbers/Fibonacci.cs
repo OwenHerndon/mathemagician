@@ -6,9 +6,29 @@ using System.Threading.Tasks;
 
 namespace MathMagician.Numbers
 {
-    public class Fibonacci
+    public class Fibonacci : Integer
     {
         //could hold 1,1,2,3,5,8,13
         private int[] BaseSequence { get; set; }
+
+        public int GetFirst()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetNext(int current)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int[] GetSequence(int how_many)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string PrintNumbers(int[] how_many)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace MathMagicianTests.Numbers
             Fibonacci fiboNumber = new Fibonacci();
 
             //act
-            int expectedResult = 2;
+            int expectedResult = 1;
             int actualResult = fiboNumber.GetNext(1)
 ;
             //assert
@@ -49,7 +49,7 @@ namespace MathMagicianTests.Numbers
             Fibonacci fiboNumber = new Fibonacci();
 
             //act
-            int[] expectedResult = { 1, 1,2, 3, 5 };
+            int[] expectedResult = { 1, 1, 2, 3, 5 };
             int[] actualResult = fiboNumber.GetSequence(5);
 
             //assert

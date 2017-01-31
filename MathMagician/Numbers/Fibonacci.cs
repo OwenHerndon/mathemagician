@@ -11,14 +11,23 @@ namespace MathMagician.Numbers
         //could hold 1,1,2,3,5,8,13
         private int[] BaseSequence { get; set; }
 
+        private int First { get; set; }
+
+        public Fibonacci()
+        {
+            First = 1;
+        }
+
         public int GetFirst()
         {
-            throw new NotImplementedException();
+            return First;
         }
 
         public int GetNext(int current)
         {
-            throw new NotImplementedException();
+            //current = Aprevious + Bprevious
+            current = current + 1;
+            return current;
         }
 
         public int[] GetSequence(int how_many)

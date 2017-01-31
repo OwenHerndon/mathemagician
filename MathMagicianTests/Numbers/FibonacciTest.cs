@@ -43,7 +43,7 @@ namespace MathMagicianTests.Numbers
             Assert.AreEqual(expectedResult, actualResult);
         }
         [TestMethod]
-        public void NatSequenceTest()
+        public void FiboSequenceTest()
         {
             //arrange
             Fibonacci fiboNumber = new Fibonacci();
@@ -58,14 +58,14 @@ namespace MathMagicianTests.Numbers
 
         }
         [TestMethod]
-        public void NatPrintTest()
+        public void FiboPrintTest()
         {
             //arrange
             Fibonacci fiboNumber = new Fibonacci();
 
             //act
             string expectedResult = "1 1 2 3 5";
-            int[] inputArray = new[] { 1, 1, 2, 3, 5 };
+            int[] inputArray = new[] {1, 1, 2, 3, 5};
             string actualResult = fiboNumber.PrintNumbers(inputArray);
 
             //assert

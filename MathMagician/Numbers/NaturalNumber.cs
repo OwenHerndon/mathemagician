@@ -8,13 +8,14 @@ namespace MathMagician.Numbers
 {
     public class NaturalNumber : Integer
     {
-        private int First { get; set; }
-
+        protected int First { get; set; }
+        protected int Step { get; set; }
         //private List<int> sequence {get; set;}
 
         public NaturalNumber()
         {
             First = 1;
+            Step = 1;
             //this.first = 1;
         }
 
@@ -23,18 +24,18 @@ namespace MathMagician.Numbers
             return First;
         }
 
-        public int GetNext(int current)
+        virtual public int GetNext(int current)
         {
             //current argument is read only
             //keep looping through numbers
             //current or first number + 1
             //return current++
             //return ++curent 
-            current = current + 1;
-            return current;
+            //current = current + 1;
+            return current + Step;
         }
 
-        public int[] GetSequence(int how_many)
+        virtual public int[] GetSequence(int how_many)
         {
             //array set to the number entered by user to be printed out
             //push numers that fit the selected opperator

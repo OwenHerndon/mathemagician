@@ -23,7 +23,7 @@ namespace MathMagicianTests.Numbers
             Fibonacci fiboNumber = new Fibonacci();
 
             //Act(call method being tested)
-            int expectedResult = 1;
+            int expectedResult = 0;
             int actualResult = fiboNumber.GetFirst();
 
             //Assert(check the output from method)
@@ -36,7 +36,7 @@ namespace MathMagicianTests.Numbers
             Fibonacci fiboNumber = new Fibonacci();
 
             //act
-            int expectedResult = 1;
+            int expectedResult =1;
             int actualResult = fiboNumber.GetNext(1)
 ;
             //assert
